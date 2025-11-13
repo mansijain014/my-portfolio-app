@@ -13,10 +13,10 @@ function App() {
       <Navbar />
       <Hero />
       <ShowreelSection />
-      <BrandPartners />
+      {/* <BrandPartners /> */}
       <Albums />
       <ServicesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <Footer />
     </div>
   );
