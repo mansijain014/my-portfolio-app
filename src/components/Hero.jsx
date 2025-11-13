@@ -5,7 +5,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export default function Hero() {
   const ref = useRef(null);
   return (
-    <div style={{ width: "100%", height: "600px", position: "relative" }}>
+    <div
+      id={"Home"}
+      style={{ width: "100%", height: "600px", position: "relative" }}
+    >
       <LiquidEther
         colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
         mouseForce={20}

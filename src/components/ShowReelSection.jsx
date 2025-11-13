@@ -25,6 +25,7 @@ export default function ShowreelSection() {
 
   return (
     <section
+      id="show-reel"
       ref={ref}
       className="relative flex flex-col items-center h-[180vh] bg-black overflow-hidden"
     >

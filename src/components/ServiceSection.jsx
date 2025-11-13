@@ -31,9 +31,11 @@ export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section className="relative bg-black text-white py-28 overflow-hidden">
+    <section
+      id="Services"
+      className="relative bg-black text-white py-28 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-16">
-        
         {/* ─── LEFT TEXT CONTENT ─── */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -42,7 +44,6 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="md:w-1/2"
         >
-
           <h3 className="text-4xl md:text-5xl font-semibold leading-tight mb-8">
             From Concept To Completion:
             <br />

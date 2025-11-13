@@ -15,7 +15,10 @@ const brands = [
 
 export default function BrandPartners() {
   return (
-    <section className="relative bg-black py-24 overflow-hidden">
+    <section
+      id="brand-partners"
+      className="relative bg-black py-24 overflow-hidden"
+    >
       {/* Title */}
       <h2 className="text-center text-white uppercase tracking-[0.2em] text-sm mb-12">
         Standing Tall with Our Esteemed Brand Partners
