@@ -14,8 +14,8 @@ function App() {
       <Hero />
       <ShowreelSection />
       <BrandPartners />
+      <Albums />
       <ServicesSection />
-      {/* <Albums /> */}
       <TestimonialsSection />
       <Footer />
     </div>
