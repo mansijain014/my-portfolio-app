@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import showReel from "../assets/showreel.mp4";
+// import showReel from "../assets/showreel.mp4";
 
 export default function ShowreelSection() {
   const ref = useRef(null);
@@ -43,7 +43,7 @@ export default function ShowreelSection() {
         className="relative w-[90vw] max-w-7xl aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/10 z-20"
       >
         <video
-          src={showReel}
+          // src={showReel}
           autoPlay
           loop
           muted
