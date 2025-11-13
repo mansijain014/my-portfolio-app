@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import showReel from "../assets/showreel.mp4";
+import showReel from "../../public/showreel.mp4";
 
 export default function ShowreelSection() {
   const ref = useRef(null);
