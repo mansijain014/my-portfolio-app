@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id={"Home"}
-      style={{ width: "100%", height: "600px", position: "relative" }}
+      style={{ width: "100%", height: "800px", position: "relative" }}
     >
       <LiquidEther
         colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
