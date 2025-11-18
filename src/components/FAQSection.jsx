@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What deliverables do you provide after the shoot? Can we customise the deliverables?",
-    a: "We provide, High-resolution edited photos, Cinematic teaser + main film, Event aftermovies, Reels/short-form edits, Raw footage (optional), Drone shots (if included). Deliverables depend on the package chosen.",
+    a: "We provide, High-resolution edited photos, Cinematic teaser + main film, Event aftermovies, Reels/short-form edits, Raw footage (optional), Drone shots (if included). Deliverables depend on the requirements.",
   },
   {
     q: "What are your pricing and payment terms?",
