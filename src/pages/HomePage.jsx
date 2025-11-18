@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Albums from "../components/Albums";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import FullscreenButton from "../utils/FullscreenButton";
 
 export default function HomePage() {
   const location = useLocation();
@@ -20,20 +21,22 @@ export default function HomePage() {
       if (el) {
         setTimeout(() => {
           el.scrollIntoView({ behavior: "smooth" });
-        }, 50); // small delay ensures DOM is ready
+        }, 50);
       }
     }
   }, [location]);
+
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white relative">
       <Navbar />
       <Hero />
       <ShowreelSection />
       <BrandPartners />
-      <Albums />
       <ServicesSection />
+      <Albums />
       <TestimonialsSection />
       <Footer />
+      <FullscreenButton />
     </div>
   );
 }
