@@ -4,42 +4,28 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// Example service data
 const services = [
-  {
-    title: "Production",
-    image: "/services/video-production.jpg",
-    route: "/production",
-  },
-  {
-    title: "Event Coverage",
-    image: "/services/editing.jpg",
-  },
-  {
-    title: "Digital",
-    image: "/services/ad-films.jpg",
-  },
-  {
-    title: "Rentals",
-    image: "/services/social-media.jpg",
-    route: "/rentals",
-  },
+  { title: "Production", route: "/production" },
+  { title: "Event Coverage" },
+  { title: "Digital" },
+  { title: "Rentals", route: "/rentals" },
 ];
 
 export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const navigate = useNavigate();
+
   return (
     <section
       id="Services"
       className="relative bg-black text-white py-28 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-16">
-        {/* ─── LEFT TEXT CONTENT ─── */}
+        {/* LEFT TEXT */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="md:w-1/2"
         >
@@ -57,80 +43,81 @@ export default function ServicesSection() {
             together.
           </p>
 
-          {/* 🔘 Explore Services Button */}
           <motion.a
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            transition={{ type: "spring", stiffness: 200, damping: 15 }}
-            className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-3 text-sm md:text-base font-medium 
-                       text-white backdrop-blur-md hover:bg-white/20 hover:border-white/30 transition-all duration-300"
+            className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-3 
+            text-sm md:text-base font-medium text-white backdrop-blur-md 
+            hover:bg-white/20 hover:border-white/30 transition-all duration-300"
           >
             Explore Services
           </motion.a>
         </motion.div>
 
-        {/* ─── RIGHT CAPSULES ─── */}
+        {/* RIGHT — CLEAN CAPSULES */}
         <div className="md:w-1/2 flex flex-col gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              onClick={() => navigate(service.route)}
+              onClick={() => service.route && navigate(service.route)}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.6,
-                delay: index * 0.1,
+                duration: 0.4,
+                delay: index * 0.05,
                 ease: "easeOut",
               }}
               viewport={{ once: true, amount: 0.3 }}
-              className="relative group rounded-full border border-white/10 bg-white/5 backdrop-blur-md overflow-hidden cursor-pointer 
-                         transition-all duration-500 ease-out hover:bg-white/10"
+              className="relative group rounded-full border border-white/10 bg-white/5 
+  backdrop-blur-md cursor-pointer px-8 py-6 flex items-center justify-between 
+  transition-all duration-150 ease-out"
+              style={{
+                transform: hoveredIndex === index ? "scale(1.03)" : "scale(1)",
+                backgroundColor:
+                  hoveredIndex === index
+                    ? "rgba(145, 39, 180, 0.16)"
+                    : "rgba(255,255,255,0.05)",
+                borderColor:
+                  hoveredIndex === index
+                    ? "rgba(191, 69, 248, 0.8)"
+                    : "rgba(255,255,255,0.1)",
+              }}
             >
-              {/* Capsule text and arrow */}
-              <div className="relative z-10 px-8 py-6 flex items-center justify-between">
-                <span className="text-lg md:text-xl font-medium">
-                  {service.title}
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 text-gray-400 group-hover:text-white transition-all duration-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </div>
+              <span className="text-lg md:text-xl font-medium">
+                {service.title}
+              </span>
 
-              {/* Hover image reveal */}
-              <motion.img
-                src={service.image}
-                alt={service.title}
-                initial={{ opacity: 0, scale: 1.1 }}
+              {/* Arrow Animation (FAST) */}
+              <motion.svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6 text-gray-300 group-hover:text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
                 animate={{
-                  opacity: hoveredIndex === index ? 1 : 0,
-                  scale: hoveredIndex === index ? 1 : 1.1,
+                  x: hoveredIndex === index ? 6 : 0,
                 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="absolute inset-0 w-full h-full object-cover rounded-full"
-              />
-
-              {/* Dark overlay for better readability */}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-full" />
+                transition={{
+                  duration: 0.18,
+                  ease: "easeOut",
+                }}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </motion.svg>
             </motion.div>
           ))}
         </div>
       </div>
 
-      {/* Gradient fade at bottom */}
+      {/* gradient fade bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent pointer-events-none" />
     </section>
   );
