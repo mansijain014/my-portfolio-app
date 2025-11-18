@@ -9,6 +9,7 @@ import Albums from "../components/Albums";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import FullScreenButton from "../utils/FullScreenButton";
+import FAQSection from "../components/FAQSection";
 
 export default function HomePage() {
   const location = useLocation();
@@ -35,6 +36,7 @@ export default function HomePage() {
       <ServicesSection />
       <Albums />
       <TestimonialsSection />
+      <FAQSection />
       <Footer />
       <FullScreenButton />
     </div>
