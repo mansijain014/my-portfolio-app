@@ -118,29 +118,6 @@ export default function ShowreelSection() {
               </svg>
             )}
           </button>
-
-          {/* Fullscreen Button */}
-          <button
-            onClick={handleFullscreen}
-            className="bg-black/40 backdrop-blur-sm p-3 rounded-full 
-               border border-white/20 text-white 
-               hover:bg-black/60 transition-all duration-200"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 8V4h4m12 0h-4m4 0v4M4 16v4h4m12 0h-4m4 0v-4"
-              />
-            </svg>
-          </button>
         </div>
 
         <div className="absolute inset-0 bg-black/20 pointer-events-none" />
