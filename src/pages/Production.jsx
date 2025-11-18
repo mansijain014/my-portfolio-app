@@ -97,8 +97,6 @@ export default function Production() {
             autoRampDuration={0.6}
           />
         </div>
-        {/* smoothed dark gradient for readability */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
 
         {/* MAIN CONTENT */}
         <div className="relative pt-28 md:pt-32 pb-24 px-4 md:px-10 lg:px-20">
@@ -144,7 +142,7 @@ export default function Production() {
                 className="bg-white text-black px-5 py-2 mt-6 rounded-full font-medium 
           hover:bg-purple-400 hover:text-white transition-all duration-300 shadow-md mx-auto"
               >
-                Enquire about a production
+                Enquire Now
               </button>
             </a>
           </section>

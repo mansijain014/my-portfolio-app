@@ -100,9 +100,6 @@ export default function CreativeServicesSplit() {
           />
         </div>
 
-        {/* DARK GRADIENT FOR READABILITY */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
-
         {/* CONTENT */}
         <div className="relative pt-28 md:pt-32 pb-24 px-4 md:px-10 lg:px-20">
           {/* HERO */}
