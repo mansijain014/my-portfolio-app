@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Albums from "../components/Albums";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import FullScreenButton from "../utils/FullscreenButton";
+import FullScreenButton from "../utils/FullScreenButton";
 
 export default function HomePage() {
   const location = useLocation();
