@@ -8,3 +8,7 @@ html {
 html, body {
   overflow-x: hidden !important;
 }
+
+button:hover {
+  cursor: pointer; /* Changes the cursor to a hand icon */
+}
