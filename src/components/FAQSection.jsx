@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "How early should we book your team for a shoot or event?",
-    a: "For weddings and large events, booking 30–60 days in advance is ideal. Corporate shoots, product shoots, and small events can be booked 7–10 days prior depending on crew and equipment availability.",
+    a: "For weddings and large events, booking 30–60 days in advance is ideal. Corporate shoots, product shoots, and small events can be booked 5-7 days prior depending on crew and equipment availability. Don't hesitate to reach out to us for your last minute needs as well.",
   },
   {
     q: "Do you travel for shoots outside the city or country?",

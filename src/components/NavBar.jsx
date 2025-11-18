@@ -12,8 +12,8 @@ export default function Navbar() {
     { text: "Show Reel", id: "show-reel" },
     { text: "Brand Partners", id: "brand-partners" },
     { text: "Testimonials", id: "testimonials" },
+    { text: "FAQs", id: "faqs" },
     { text: "Socials", id: "footer" },
-    { text: "Address", id: "footer" },
   ];
 
   return (
@@ -162,10 +162,7 @@ export default function Navbar() {
                       >
                         <a
                           onClick={() => {
-                            setMenuOpen(false);
-                            document.getElementById(sub.id).scrollIntoView({
-                              behavior: "smooth",
-                            });
+                            navigate(`/#${sub.id}`);
                           }}
                         >
                           {sub.text}
@@ -182,10 +179,7 @@ export default function Navbar() {
               >
                 <a
                   onClick={() => {
-                    setMenuOpen(false);
-                    document.getElementById(item).scrollIntoView({
-                      behavior: "smooth",
-                    });
+                    navigate(`/#${item}`);
                   }}
                 >
                   {" "}
