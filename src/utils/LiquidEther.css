@@ -5,3 +5,9 @@
   height: 100%;
   touch-action: none;
 }
+
+@media (max-width: 768px) {
+  .liquid-ether-container {
+    pointer-events: none !important;
+  }
+}
