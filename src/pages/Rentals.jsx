@@ -7,32 +7,36 @@ export default function Rentals() {
     <>
       <Navbar />
 
-      {/* FULLSCREEN BACKGROUND LAYER */}
-      <div className="fixed inset-0 -z-10 pointer-events-none bg-black">
-        <LiquidEther
-          colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous={false}
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={true}
-          autoDemo={true}
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-        />
-      </div>
-
       {/* FOREGROUND CONTENT */}
       <div className="relative min-h-screen text-white flex flex-col items-center pt-32 px-4 backdrop-blur-[2px]">
+        <div className="fixed inset-0 -z-10 pointer-events-none bg-black">
+          <LiquidEther
+            colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={true}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
+        </div>
         <div className="max-w-5xl w-full text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-semibold mb-4">
+          <p className="text-xs tracking-[0.3em] uppercase text-purple-300/80 mb-4">
+            Pixel Media · Production
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
             Camera & Gear Rentals
+            <span className="block text-gray-300 font-normal">
+              for all your needs.
+            </span>
           </h1>
 
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">

@@ -7,25 +7,17 @@ import { useNavigate } from "react-router-dom";
 // Example service data
 const services = [
   {
-    title: "Video Production",
+    title: "Production",
     image: "/services/video-production.jpg",
-  },
-  {
-    title: "Editing & Post Production",
-    image: "/services/editing.jpg",
-  },
-  {
-    title: "Ad Films & Commercials",
-    image: "/services/ad-films.jpg",
+    route: "/production",
   },
   {
     title: "Event Coverage",
-    image: "/services/event.jpg",
+    image: "/services/editing.jpg",
   },
   {
-    title: "Social Media Content",
-    image: "/services/social-media.jpg",
-    // route: "/social-media"
+    title: "Digital",
+    image: "/services/ad-films.jpg",
   },
   {
     title: "Rentals",
@@ -60,9 +52,9 @@ export default function ServicesSection() {
           </h3>
 
           <p className="text-gray-400 text-lg leading-relaxed max-w-md mb-10">
-            We handle every aspect of video creation, from ideation to final
-            delivery. Our team ensures your story connects with your audience
-            every step of the way.
+            From films to events to digital campaigns, we bring every idea to
+            life with production, creativity, and technology working seamlessly
+            together.
           </p>
 
           {/* 🔘 Explore Services Button */}

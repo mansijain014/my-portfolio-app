@@ -28,7 +28,7 @@
 /* CARD BASE */
 .magic-bento-card {
   position: relative;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border-color);
@@ -57,7 +57,7 @@
   position: absolute;
   inset: 0;
   background: black;
-  opacity: 0.35;
+  opacity: 0.05;
   z-index: 2;
 }
 
