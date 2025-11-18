@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const services = [
   { title: "Production", route: "/production" },
   { title: "Event Coverage", route: "/events" },
-  { title: "Digital" },
+  { title: "Digital & Creative Service", route: "/digital" },
   { title: "Rentals", route: "/rentals" },
 ];
 
@@ -43,16 +43,6 @@ export default function ServicesSection() {
             together.
           </p>
 
-          <motion.a
-            href="#"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.97 }}
-            className="inline-block rounded-full border border-white/20 bg-white/10 px-8 py-3 
-            text-sm md:text-base font-medium text-white backdrop-blur-md 
-            hover:bg-white/20 hover:border-white/30 transition-all duration-300"
-          >
-            Explore Services
-          </motion.a>
         </motion.div>
 
         {/* RIGHT — CLEAN CAPSULES */}
