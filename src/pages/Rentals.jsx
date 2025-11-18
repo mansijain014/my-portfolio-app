@@ -30,7 +30,7 @@ export default function Rentals() {
         </div>
         <div className="max-w-5xl w-full text-center mb-12">
           <p className="text-xs tracking-[0.3em] uppercase text-purple-300/80 mb-4">
-            Pixel Media · Production
+            Pixel Media · Rentals
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
             Camera & Gear Rentals

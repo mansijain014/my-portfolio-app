@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const services = [
   { title: "Production", route: "/production" },
-  { title: "Event Coverage" },
+  { title: "Event Coverage", route: "/events" },
   { title: "Digital" },
   { title: "Rentals", route: "/rentals" },
 ];

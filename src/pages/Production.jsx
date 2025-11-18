@@ -76,8 +76,27 @@ export default function Production() {
       <Navbar />
       <main
         ref={scrollContainerRef}
-        className="relative min-h-screen bg-black text-white overflow-hidden"
+        className="relative min-h-screen text-white overflow-hidden"
       >
+        <div className="fixed inset-0 -z-10 pointer-events-none bg-black">
+          <LiquidEther
+            colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous={false}
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={true}
+            autoDemo={true}
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+          />
+        </div>
         {/* smoothed dark gradient for readability */}
         <div className="fixed inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
 
