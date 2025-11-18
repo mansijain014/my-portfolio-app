@@ -1,9 +1,11 @@
 import { useState } from "react";
 import pixelMediaLogo from "../assets/white-pixel-media.webp";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const navigate = useNavigate();
 
   const menuItems = ["Home", "About", "Services", "Album", "Projects"];
   const aboutSubmenu = [
@@ -53,9 +55,7 @@ export default function Navbar() {
                     >
                       <a
                         onClick={() => {
-                          document.getElementById(sub.id).scrollIntoView({
-                            behavior: "smooth",
-                          });
+                          navigate(`/#${sub.id}`); // Go home with a hash
                         }}
                       >
                         {sub.text}
@@ -71,9 +71,7 @@ export default function Navbar() {
               >
                 <a
                   onClick={() => {
-                    document.getElementById(item).scrollIntoView({
-                      behavior: "smooth",
-                    });
+                    navigate(`/#${item}`); // Go home with a hash
                   }}
                 >
                   {item}
