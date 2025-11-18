@@ -6,23 +6,27 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     q: "Do you provide both photo & video services for events?",
-    a: "Yes, we provide complete production including photography, videography, cinematic films, drone coverage and multi-camera setups.",
+    a: "Yes. Pixel Media offers full-service production solutions including photography, videography, cinematic films, drone coverage, and multi-camera setups for events, weddings, corporate shoots, and brand campaigns. We handle everything from pre-production to final delivery.",
   },
   {
-    q: "How early should we book your team?",
-    a: "For weddings and large events, we recommend booking 30–60 days in advance. For corporate shoots, 7–10 days is ideal.",
+    q: "How early should we book your team for a shoot or event?",
+    a: "For weddings and large events, booking 30–60 days in advance is ideal. Corporate shoots, product shoots, and small events can be booked 7–10 days prior depending on crew and equipment availability.",
   },
   {
-    q: "Do you travel for shoots outside the city?",
-    a: "Yes, our team travels across India. Travel and stay are arranged as per the project's requirement.",
+    q: "Do you travel for shoots outside the city or country?",
+    a: "Absolutely. We travel pan-India and internationally for wedding shoots, corporate events, brand films, and commercial productions. Travel and accommodation are discussed during booking.",
   },
   {
-    q: "Can we customise the deliverables?",
-    a: "Absolutely. Every project is tailored from film style to edit duration, social media cuts, reels, and more.",
+    q: "What deliverables do you provide after the shoot? Can we customise the deliverables?",
+    a: "We provide, High-resolution edited photos, Cinematic teaser + main film, Event aftermovies, Reels/short-form edits, Raw footage (optional), Drone shots (if included). Deliverables depend on the package chosen.",
   },
   {
-    q: "What are your payment terms?",
-    a: "Typically 40% advance for booking, 40% on shoot day, and the remaining 20% at delivery. This may vary based on project size.",
+    q: "What are your pricing and payment terms?",
+    a: "Pricing depends on crew size, equipment, shoot duration, location, and editing requirements. Our standard payment terms are 50% advance and 50% upon final delivery.",
+  },
+  {
+    q: "Do you provide equipment along with the crew?",
+    a: "Yes. We provide complete production gear - cameras, lenses, lighting, audio equipment, gimbals, monitors, and broadcast setups, all operated by trained professionals.",
   },
 ];
 
@@ -48,11 +52,17 @@ export default function FAQSection() {
           const isOpen = openIndex === index;
 
           return (
-            <div
+            <motion.div
               key={index}
-              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md 
-                         px-6 py-4 cursor-pointer transition-all"
               onClick={() => setOpenIndex(isOpen ? null : index)}
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.015 }}
+              transition={{ duration: 0.25 }}
+              className="
+                rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md 
+                px-6 py-4 cursor-pointer transition-all duration-300
+                hover:bg-white/10 hover:border-purple-400/40 hover:shadow-[0_0_30px_rgba(150,0,255,0.25)]
+              "
             >
               {/* Question */}
               <div className="flex justify-between items-center">
@@ -81,7 +91,7 @@ export default function FAQSection() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           );
         })}
       </div>
