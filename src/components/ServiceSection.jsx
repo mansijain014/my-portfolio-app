@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Example service data
 const services = [
@@ -24,12 +25,18 @@ const services = [
   {
     title: "Social Media Content",
     image: "/services/social-media.jpg",
+    // route: "/social-media"
+  },
+  {
+    title: "Rentals",
+    image: "/services/social-media.jpg",
+    route: "/rentals",
   },
 ];
 
 export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
+  const navigate = useNavigate();
   return (
     <section
       id="Services"
@@ -76,6 +83,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <motion.div
               key={index}
+              onClick={() => navigate(service.route)}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               initial={{ opacity: 0, y: 40 }}
