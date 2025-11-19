@@ -4,6 +4,7 @@ import Rentals from "./pages/Rentals";
 import Production from "./pages/Production";
 import EventCoverage from "./pages/EventCoverage";
 import CreativeServicesSplit from "./pages/Digitals";
+import ProjectsSection from "./pages/Projects";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/events" element={<EventCoverage />} />
       <Route path="/digital" element={<CreativeServicesSplit />} />
       <Route path="/rentals" element={<Rentals />} />
+      <Route path="/projects" element={<ProjectsSection />} />
     </Routes>
   );
 }

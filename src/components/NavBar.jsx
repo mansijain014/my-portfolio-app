@@ -71,7 +71,11 @@ export default function Navbar() {
               >
                 <a
                   onClick={() => {
-                    navigate(`/#${item}`); // Go home with a hash
+                    if (item === "Projects") {
+                      navigate("/projects");
+                    } else {
+                      navigate(`/#${item}`);
+                    }
                   }}
                 >
                   {item}
@@ -179,7 +183,12 @@ export default function Navbar() {
               >
                 <a
                   onClick={() => {
-                    navigate(`/#${item}`);
+                    setMenuOpen(false);
+                    if (item === "Projects") {
+                      navigate("/projects");
+                    } else {
+                      navigate(`/#${item}`);
+                    }
                   }}
                 >
                   {" "}
