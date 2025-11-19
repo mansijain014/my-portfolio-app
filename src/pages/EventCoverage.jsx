@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import "./EventCoverage.css";
 import LiquidEther from "../utils/LiquidEther";
-import corporateImg from "../assets/album17.png";
-import weddingImg from "../assets/album30.png";
-import stageImg from "../assets/album1.png";
+import corporateImg from "../assets/album17.webp";
+import weddingImg from "../assets/album30.webp";
+import stageImg from "../assets/album1.webp";
 
 const cards = [
   {
