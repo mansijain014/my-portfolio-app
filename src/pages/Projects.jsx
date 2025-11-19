@@ -4,15 +4,15 @@ import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Dummy thumbnails – replace with real assets
-import thumb1 from "../assets/after-movie-ashoka.png";
-import thumb2 from "../assets/sahaja-yoga-short-film.png";
-import thumb3 from "../assets/ifp-ad-shoot.png";
-import thumb4 from "../assets/audi-expo-shoot.png";
-import thumb5 from "../assets/neutron-e-bike-commercial-ad-film.png";
-import thumb6 from "../assets/ashish-singhal-success-story.png";
-import thumb7 from "../assets/neutron-e-bike-launch.png";
-import thumb8 from "../assets/jeevika-documentary.png";
-import thumb9 from "../assets/hum-hain-super-star-reality-show.png";
+import thumb1 from "../assets/after-movie-ashoka.webp";
+import thumb2 from "../assets/sahaja-yoga-short-film.webp";
+import thumb3 from "../assets/ifp-ad-shoot.webp";
+import thumb4 from "../assets/audi-expo-shoot.webp";
+import thumb5 from "../assets/neutron-e-bike-commercial-ad-film.webp";
+import thumb6 from "../assets/ashish-singhal-success-story.webp";
+import thumb7 from "../assets/neutron-e-bike-launch.webp";
+import thumb8 from "../assets/jeevika-documentary.webp";
+import thumb9 from "../assets/hum-hain-super-star-reality-show.webp";
 import LiquidEther from "../utils/LiquidEther";
 import Navbar from "../components/NavBar";
 
