@@ -52,7 +52,12 @@ export default function ShowreelSection() {
     <section
       id="show-reel"
       ref={ref}
-      className="relative flex flex-col items-center min-h-[140vh] bg-black overflow-hidden"
+      className="
+    relative flex flex-col items-center 
+    md:h-[160vh]         /* tablet */
+    lg:h-[180vh]         /* desktop */
+    bg-black overflow-hidden
+  "
     >
       {/* TITLE */}
       <motion.h1
