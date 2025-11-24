@@ -59,7 +59,7 @@ export default function FAQSection() {
               whileHover={{ scale: 1.015 }}
               transition={{ duration: 0.25 }}
               className="
-                rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md 
+                rounded-4xl border border-white/10 bg-white/5 backdrop-blur-md 
                 px-6 py-4 cursor-pointer transition-all duration-300
                 hover:bg-white/10 hover:border-purple-400/40 hover:shadow-[0_0_30px_rgba(150,0,255,0.25)]
               "
