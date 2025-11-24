@@ -27,3 +27,25 @@ button:hover {
   background-size: 1000px 100%;
   animation: shimmer 1.6s infinite linear;
 }
+
+/* App is hidden until loader finishes */
+#app-root.app-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#app-root.app-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Loader fade out */
+#global-loader {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
+
+#global-loader.loader-hide {
+  opacity: 0;
+  pointer-events: none;
+}
