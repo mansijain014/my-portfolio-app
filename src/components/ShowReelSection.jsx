@@ -48,7 +48,10 @@ export default function ShowreelSection() {
     <section
       id="show-reel"
       ref={ref}
-      className="relative flex flex-col items-center h-[180vh] bg-black overflow-hidden"
+      className="relative flex flex-col items-center 
+        md:h-[100vh]           /* tablets / small laptops */
+        lg:h-[180vh]           /* desktop cinematic */
+        bg-black overflow-hidden"
     >
       <motion.h1
         style={{ opacity: opacityText }}
