@@ -5,10 +5,25 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden !important;
 }
 
 button:hover {
   cursor: pointer; /* Changes the cursor to a hand icon */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: 500px 0;
+  }
+}
+
+.animate-shimmer {
+  background-size: 1000px 100%;
+  animation: shimmer 1.6s infinite linear;
 }
