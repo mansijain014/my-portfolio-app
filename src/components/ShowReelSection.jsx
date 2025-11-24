@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Lottie from "lottie-react";
 import pixelLoader from "../lottie/pixel-loader.json"; // <-- ADD THIS
-import showReel from "../assets/showreel.mp4";
+import showReel from "../assets/showreel.webm";
 
 export default function ShowreelSection() {
   const ref = useRef(null);
@@ -75,15 +75,13 @@ export default function ShowreelSection() {
       >
         {/* SKELETON + LOTTIE LOADER */}
         {!isVideoLoaded && (
-          <div className="absolute inset-0 rounded-3xl bg-white/10 flex items-center justify-center">
+          <div className="absolute inset-0 rounded-3xl bg-white/10 flex items-center justify-center z-30">
             <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/20 to-white/5 animate-pulse" />
-
-            {/* LOTTIE ANIMATION */}
             <Lottie
               animationData={pixelLoader}
               loop
               autoplay
-              className="w-32 h-32 opacity-80"
+              className="w-32 h-32 opacity-80 z-40"
             />
           </div>
         )}
@@ -91,13 +89,14 @@ export default function ShowreelSection() {
         {/* VIDEO */}
         <video
           ref={videoRef}
+          preload="auto"
           src={showReel}
           autoPlay
           playsInline
           loop
           muted={isMuted}
-          className={`w-full h-full object-cover transition-opacity duration-500 
-            ${isVideoLoaded ? "opacity-100" : "opacity-0"}`}
+          className={`w-full h-full object-cover transition-opacity duration-500 z-10
+    ${isVideoLoaded ? "opacity-100" : "opacity-0"}`}
         />
 
         {/* CONTROLS */}
@@ -147,9 +146,6 @@ export default function ShowreelSection() {
           </button>
         </div>
       </motion.div>
-
-      {/* FADE GRADIENT */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black pointer-events-none" />
     </section>
   );
 }
