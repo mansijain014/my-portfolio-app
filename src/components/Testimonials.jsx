@@ -1,32 +1,56 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import bgImage from "../assets/testimonial-bg.jpg";
+import bgImage from "../assets/testimonial-bg.webp";
+import imranKhan from "../assets/imran-sir.webp";
+import sunilKumar from "../assets/sunilKumar.webp";
+import sagarChaudhary from "../assets/sagarChaudhary.webp";
+import balwantSingh from "../assets/balwantSingh.webp";
+import varunMehta from "../assets/varunMehta.webp";
+import rahulKumar from "../assets/rahulKumar.webp";
 
 const testimonials = [
   {
-    name: "Aarav Sharma",
-    role: "Founder, Creative Vision",
-    image: "/clients/aarav.jpg",
-    quote: "Pixel Media transformed our story into something unforgettable.",
+    name: "Imran khan",
+    role: "Founder, More slides",
+    image: imranKhan,
+    quote:
+      "As a founder, I value professionalism, clarity and consistent quality and Pixel Media delivers all three. Their production team is disciplined, creative and extremely dependable. Whether it's a fast-paced shoot, a brand film or event coverage, they handle everything with maturity and attention to detail. I recommend Pixel Media to anyone who wants a trustworthy, high-quality production partner.",
   },
   {
-    name: "Neha Patel",
-    role: "Marketing Head, Horizon Group",
-    image: "/clients/neha.jpg",
-    quote: "Every frame felt intentional and emotional — brilliant team.",
+    name: "Sunil Kumar",
+    role: "Founder, Modern Stage Services",
+    image: sunilKumar,
+    quote:
+      "Pixel Media has supported us on multiple large-scale events, and their professionalism has been exceptional. They understand technical setups, work seamlessly with production crews and deliver stunning visuals even under tight timelines. Their commitment to quality makes them one of the most dependable production teams in Delhi.",
   },
   {
-    name: "Rahul Verma",
-    role: "Director, Vibe Studios",
-    image: "/clients/rahul.jpg",
-    quote: "From script to screen, they delivered beyond expectations.",
+    name: "Sagar Chaudhary",
+    role: "Founder, Delmum Productions",
+    image: sagarChaudhary,
+    quote:
+      "Pixel Media has become our go-to team whenever we need fast, clean and premium-quality production. Their coordination, execution and delivery are consistently on point. Shubhank understands the brief instantly and gets things done without excuses. Working with Pixel Media feels effortless, they deliver exactly what we envision, every single time.",
   },
   {
-    name: "Simran Kaur",
-    role: "CEO, Dreamline Productions",
-    image: "/clients/simran.jpg",
-    quote: "Professional, passionate and creative team — amazing experience.",
+    name: "Balwant Singh",
+    role: "Founder, Sorted Media Management",
+    image: balwantSingh,
+    quote:
+      "Professional, reliable and extremely dedicated, that's Pixel Media. We've collaborated on multiple shoots and live events, and their team always shows up prepared with solutions, not problems. The final output is polished, crisp and always delivered before deadline. Highly recommended for anyone who wants a dependable production partner.",
+  },
+  {
+    name: "Varun Mehta",
+    role: "Founder, Soulz Production",
+    image: varunMehta,
+    quote:
+      "What I appreciate the most about Pixel Media is their clarity, honesty and work ethic. They speak less and deliver more. From creative direction to execution, their team handles everything smoothly. Clients love the output and the experience is always smooth. Pixel Media is one of the few teams I blindly trust for quality.",
+  },
+  {
+    name: "Rahul Kumar",
+    role: "Founder, WaffleBytes",
+    image: rahulKumar,
+    quote:
+      "Pixel Media brings a rare mix of creativity and operational discipline. Whether it's a brand shoot, a fast-paced event setup or post-production, their attention to detail stands out. The team is humble, hardworking and highly collaborative, exactly the kind of production partner every modern brand needs.",
   },
 ];
 
