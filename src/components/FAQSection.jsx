@@ -28,6 +28,10 @@ const faqs = [
     q: "Do you provide equipment along with the crew?",
     a: "Yes. We provide complete production gear - cameras, lenses, lighting, audio equipment, gimbals, monitors, and broadcast setups, all operated by trained professionals.",
   },
+  {
+    q: "Who is behind Pixel Media Production?",
+    a: "Shubhank Jain is the founder of Pixel Media, he specializes in turning events, brand launches, and personal milestones into captivating visual narratives. With a keen eye for detail and a passion for storytelling, he collaborates with clients to produce content that not only documents moments but also elevates their brand presence."
+  }
 ];
 
 export default function FAQSection() {
