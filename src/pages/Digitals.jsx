@@ -192,8 +192,7 @@ export default function CreativeServicesSplit() {
                       {sec.items.map((item, i) => (
                         <div
                           key={i}
-                          className="px-4 py-2 rounded-xl bg-white/10 border border-white/10 
-                                     hover:bg-purple-400/20 hover:border-purple-400/40 
+                          className="px-4 py-2 rounded-xl bg-white/10 border border-white/10
                                      transition-all text-sm md:text-base"
                         >
                           {item}
