@@ -16,7 +16,7 @@ const cardData = [
   {
     color: "#060010",
     description: "High-end bodies for narrative, ads & music videos.",
-    label: "Cameras",
+    label: "CAMERAS",
     bgImage: camera,
     items: [
       { name: "Sony PXW 160" },
@@ -39,7 +39,7 @@ const cardData = [
   {
     color: "#060010",
     description: "Crisp glass for every focal length and mood.",
-    label: "Lenses",
+    label: "LENSES",
     bgImage: lens,
     items: [
       { name: "Sony G Master - 18mm" },
@@ -60,7 +60,7 @@ const cardData = [
   {
     color: "#060010",
     description: "Soft, hard & practical lighting for any scene.",
-    label: "Lights",
+    label: "LIGHTS",
     bgImage: lights,
     items: [
       { name: "Godox SL 200" },
@@ -76,7 +76,7 @@ const cardData = [
   {
     color: "#060010",
     description: "Mics & recorders for clean sound.",
-    label: "Sound",
+    label: "SOUND",
     bgImage: mics,
     items: [
       { name: "Sennheiser Cordless Lapel Mic" },
@@ -90,7 +90,7 @@ const cardData = [
   {
     color: "#060010",
     description: "Tripods, gimbals, cards & more.",
-    label: "Accessories & Support",
+    label: "ACCESSORIES & SUPORT",
     bgImage: gimbal,
     items: [
       { name: "Tripods" },
@@ -114,7 +114,7 @@ const cardData = [
   {
     color: "#060010",
     description: "Broadcast-grade displays for precise visual evaluation.",
-    label: "Monitors",
+    label: "MONITORS",
     bgImage: monitor,
     items: [
       { name: "Lilliput Monitor 14 Inches" },
