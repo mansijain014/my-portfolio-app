@@ -94,21 +94,9 @@ export default function FooterSection() {
               color: "#E1306C",
             },
             {
-              icon: <FaTwitter />,
-              label: "Twitter",
-              href: "https://twitter.com/yourhandle",
-              color: "#1DA1F2",
-            },
-            {
-              icon: <FaYoutube />,
-              label: "YouTube",
-              href: "https://youtube.com/@yourchannel",
-              color: "#FF0000",
-            },
-            {
               icon: <FaLinkedinIn />,
               label: "LinkedIn",
-              href: "https://linkedin.com/in/yourprofile",
+              href: "https://www.linkedin.com/company/pixelmediaa/",
               color: "#0A66C2",
             },
           ].map((item, i) => (
