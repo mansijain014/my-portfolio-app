@@ -13,45 +13,39 @@ import CreativeServicesSplit from "./pages/Digitals";
 import ProjectsSection from "./pages/Projects";
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    // 1) Minimum loader time
-    const minTime = new Promise((resolve) => setTimeout(resolve, 1200));
+    let raf1, raf2;
+    let timeoutId;
 
-    // 2) Wait for images (video excluded)
-    const waitImages = Promise.all(
-      Array.from(document.images)
-        .filter((img) => !img.complete)
-        .map(
-          (img) =>
-            new Promise((resolve) => {
-              img.onload = img.onerror = resolve;
-            })
-        )
-    );
-
-    // 3) If Showreel video exists, wait for it
-    const video = document.querySelector("video");
-    const waitVideo = new Promise((resolve) => {
-      if (!video) return resolve();
-      if (video.readyState >= 2) return resolve(); // already loaded
-      video.onloadeddata = resolve;
-      video.onerror = resolve; // don't block forever
+    // 1️⃣ Ensure first paint happens
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => {
+        // 2️⃣ Minimum loader time (UX polish)
+        timeoutId = setTimeout(() => {
+          // 3️⃣ Remove loader after fade
+          setTimeout(() => {
+            setShowLoader(false);
+          }, 600);
+        }, 900);
+      });
     });
 
-    Promise.all([minTime, waitImages, waitVideo]).then(() => {
-      setLoaded(true);
-    });
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   return (
     <>
-      {!loaded && <Loader fadeOut={loaded} />}
+      {showLoader && <Loader fadeOut={!showLoader} />}
 
       <div
         className={`transition-opacity duration-700 ${
-          loaded ? "opacity-100" : "opacity-0 pointer-events-none"
+          showLoader ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
         <Routes>
