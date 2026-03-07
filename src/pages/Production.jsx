@@ -8,6 +8,7 @@ import LiquidEther from "../utils/LiquidEther";
 import videoImg from "../assets/video-production.jpg";
 import photoImg from "../assets/photography.jpg";
 import liveImg from "../assets/broadcast.jpg";
+import { Helmet } from "react-helmet-async";
 
 const sections = [
   {
@@ -73,6 +74,17 @@ export default function Production() {
 
   return (
     <>
+      <Helmet>
+        <title>Production Services | Pixel Media Production</title>
+        <meta
+          name="description"
+          content="Professional video production services including commercials, corporate films, event coverage and digital media production."
+        />
+        <link
+          rel="canonical"
+          href="https://pixelmediaproduction.in/video-production-delhi"
+        />
+      </Helmet>
       <Navbar />
       <main
         ref={scrollContainerRef}

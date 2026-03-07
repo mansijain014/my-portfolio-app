@@ -15,6 +15,7 @@ import thumb8 from "../assets/jeevika-documentary.webp";
 import thumb9 from "../assets/hum-hain-super-star-reality-show.webp";
 import LiquidEther from "../utils/LiquidEther";
 import Navbar from "../components/NavBar";
+import { Helmet } from "react-helmet-async";
 
 // MASTER PROJECT LIST
 const projects = [
@@ -159,6 +160,21 @@ export default function ProjectsSection() {
 
   return (
     <section id="Projects" className="py-24 px-6 md:px-12 lg:px-20 text-white">
+      <Helmet>
+        <title>Our Projects | Pixel Media Production</title>
+        <meta
+          name="description"
+          content="Explore cinematic projects, brand films, commercials, and creative productions crafted by Pixel Media Production."
+        />
+        <meta
+          name="keywords"
+          content="film portfolio, video production projects, brand films, commercials"
+        />
+        <link
+          rel="canonical"
+          href="https://pixelmediaproduction.in/production-projects"
+        />
+      </Helmet>
       <Navbar />
       <div className="fixed inset-0 -z-10 pointer-events-none bg-black">
         <LiquidEther

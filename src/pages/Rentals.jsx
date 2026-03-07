@@ -1,10 +1,19 @@
 import Navbar from "../components/NavBar";
 import MagicBento from "../utils/MagicBento";
 import LiquidEther from "../utils/LiquidEther";
+import { Helmet } from "react-helmet-async";
 
 export default function Rentals() {
   return (
     <>
+      <Helmet>
+        <title>Equipment Rentals | Pixel Media Production</title>
+        <meta
+          name="description"
+          content="Professional camera and production equipment rentals for filmmakers, creators, and studios."
+        />
+        <link rel="canonical" href="https://pixelmediaproduction.in/camera-rentals-delhi" />
+      </Helmet>
       <Navbar />
 
       {/* FOREGROUND CONTENT */}
