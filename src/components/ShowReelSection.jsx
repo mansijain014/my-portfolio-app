@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Lottie from "lottie-react";
 import pixelLoader from "../lottie/pixel-loader.json"; // <-- ADD THIS
-import showReel from "../assets/showreel.webm";
+import showReel from "../../public/showreel.webm";
 
 export default function ShowreelSection() {
   const ref = useRef(null);
