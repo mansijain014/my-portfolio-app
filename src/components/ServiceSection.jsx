@@ -5,10 +5,10 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const services = [
-  { title: "Production", route: "/production" },
-  { title: "Event Coverage", route: "/events" },
-  { title: "Digital & Creative Service", route: "/digital" },
-  { title: "Rentals", route: "/rentals" },
+  { title: "Production", route: "/video-production-delhi" },
+  { title: "Event Coverage", route: "/event-management" },
+  { title: "Digital & Creative Service", route: "/digital-media" },
+  { title: "Rentals", route: "/camera-rentals-delhi" },
 ];
 
 export default function ServicesSection() {

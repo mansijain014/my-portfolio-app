@@ -72,7 +72,7 @@ export default function Navbar() {
                 <a
                   onClick={() => {
                     if (item === "Projects") {
-                      navigate("/projects");
+                      navigate("/production-projects");
                     } else {
                       navigate(`/#${item}`);
                     }
@@ -185,7 +185,7 @@ export default function Navbar() {
                   onClick={() => {
                     setMenuOpen(false);
                     if (item === "Projects") {
-                      navigate("/projects");
+                      navigate("/production-projects");
                     } else {
                       navigate(`/#${item}`);
                     }

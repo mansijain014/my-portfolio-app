@@ -50,11 +50,11 @@ function App() {
       >
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/production" element={<Production />} />
-          <Route path="/events" element={<EventCoverage />} />
-          <Route path="/digital" element={<CreativeServicesSplit />} />
-          <Route path="/rentals" element={<Rentals />} />
-          <Route path="/projects" element={<ProjectsSection />} />
+          <Route path="/video-production-delhi" element={<Production />} />
+          <Route path="/event-management" element={<EventCoverage />} />
+          <Route path="/digital-media" element={<CreativeServicesSplit />} />
+          <Route path="/camera-rentals-delhi" element={<Rentals />} />
+          <Route path="/production-projects" element={<ProjectsSection />} />
         </Routes>
       </div>
     </>
