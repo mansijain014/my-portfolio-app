@@ -67,7 +67,7 @@ export default function Production() {
   const heroOpacity = useTransform(
     scrollYProgress,
     [0, 0.3, 0.7, 1],
-    [1, 1, 0.4, 0]
+    [1, 1, 0.4, 0],
   );
   const heroY = useTransform(scrollYProgress, [0, 1], [0, -80]);
   const heroScale = useTransform(scrollYProgress, [0, 0.6, 1], [1, 1, 0.9]);
@@ -75,10 +75,13 @@ export default function Production() {
   return (
     <>
       <Helmet>
-        <title>Production Services | Pixel Media Production</title>
+        <title>
+          Best Video Production Services in Delhi | Corporate Films, Events &
+          Broadcast
+        </title>
         <meta
           name="description"
-          content="Professional video production services including commercials, corporate films, event coverage and digital media production."
+          content="Professional video production services in Delhi NCR including corporate films, brand videos, photography, live streaming, multi-camera broadcast & event coverage. End-to-end production from concept to delivery."
         />
         <link
           rel="canonical"

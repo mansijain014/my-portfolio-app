@@ -7,12 +7,20 @@ export default function Rentals() {
   return (
     <>
       <Helmet>
-        <title>Equipment Rentals | Pixel Media Production</title>
+        <title>
+          Best Camera Rental in Delhi NCR | Affordable Cinema Cameras &
+          Equipment
+        </title>
+
         <meta
           name="description"
-          content="Professional camera and production equipment rentals for filmmakers, creators, and studios."
+          content="Affordable camera and equipment rental in Delhi NCR. Rent cinema cameras, lenses, lighting, audio gear & full production kits for shoots, events & filmmakers."
         />
-        <link rel="canonical" href="https://pixelmediaproduction.in/camera-rentals-delhi" />
+
+        <link
+          rel="canonical"
+          href="https://pixelmediaproduction.in/camera-rentals-delhi"
+        />
       </Helmet>
       <Navbar />
 

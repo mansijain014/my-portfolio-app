@@ -143,13 +143,13 @@ export default function ProjectsSection() {
         setActiveIndex(null);
       } else if (e.key === "ArrowRight") {
         setActiveIndex((prev) =>
-          prev === null ? 0 : (prev + 1) % filteredProjects.length
+          prev === null ? 0 : (prev + 1) % filteredProjects.length,
         );
       } else if (e.key === "ArrowLeft") {
         setActiveIndex((prev) =>
           prev === null
             ? 0
-            : (prev - 1 + filteredProjects.length) % filteredProjects.length
+            : (prev - 1 + filteredProjects.length) % filteredProjects.length,
         );
       }
     };
@@ -161,15 +161,15 @@ export default function ProjectsSection() {
   return (
     <section id="Projects" className="py-24 px-6 md:px-12 lg:px-20 text-white">
       <Helmet>
-        <title>Our Projects | Pixel Media Production</title>
+        <title>
+          Video Production Portfolio | Corporate Films, Ads & Projects
+        </title>
+
         <meta
           name="description"
-          content="Explore cinematic projects, brand films, commercials, and creative productions crafted by Pixel Media Production."
+          content="Explore Pixel Media’s video production portfolio featuring corporate films, ad shoots, brand videos, documentaries, event coverage & cinematic projects for leading brands."
         />
-        <meta
-          name="keywords"
-          content="film portfolio, video production projects, brand films, commercials"
-        />
+
         <link
           rel="canonical"
           href="https://pixelmediaproduction.in/production-projects"
@@ -213,7 +213,7 @@ export default function ProjectsSection() {
             Pixel Media · Projects
           </p>
           <h2 className="text-4xl md:text-5xl font-semibold mb-3">
-            Featured Projects
+            Featured Video Production Portfolio & Projects
           </h2>
           <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto">
             A curated selection of films, weddings, events and campaigns we've
@@ -379,7 +379,7 @@ export default function ProjectsSection() {
                         setActiveIndex(
                           (prev) =>
                             (prev - 1 + filteredProjects.length) %
-                            filteredProjects.length
+                            filteredProjects.length,
                         )
                       }
                       className="px-3 py-1.5 rounded-full text-xs bg-white/5 border border-white/15 hover:bg-white/15 transition-all"
@@ -390,7 +390,7 @@ export default function ProjectsSection() {
                     <button
                       onClick={() =>
                         setActiveIndex(
-                          (prev) => (prev + 1) % filteredProjects.length
+                          (prev) => (prev + 1) % filteredProjects.length,
                         )
                       }
                       className="px-3 py-1.5 rounded-full text-xs bg-white/5 border border-white/15 hover:bg-white/15 transition-all"

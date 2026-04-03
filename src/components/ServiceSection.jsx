@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const services = [
   { title: "Production", route: "/video-production-delhi" },
   { title: "Event Coverage", route: "/event-management" },
-  { title: "Digital & Creative Service", route: "/digital-media" },
+  { title: "Digital & Creative Service", route: "/digital-creative-services" },
   { title: "Rentals", route: "/camera-rentals-delhi" },
 ];
 
@@ -42,7 +42,6 @@ export default function ServicesSection() {
             life with production, creativity, and technology working seamlessly
             together.
           </p>
-
         </motion.div>
 
         {/* RIGHT — CLEAN CAPSULES */}

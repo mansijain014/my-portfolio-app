@@ -52,7 +52,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/video-production-delhi" element={<Production />} />
           <Route path="/event-management" element={<EventCoverage />} />
-          <Route path="/digital-media" element={<CreativeServicesSplit />} />
+          <Route
+            path="/digital-creative-services"
+            element={<CreativeServicesSplit />}
+          />
           <Route path="/camera-rentals-delhi" element={<Rentals />} />
           <Route path="/production-projects" element={<ProjectsSection />} />
         </Routes>

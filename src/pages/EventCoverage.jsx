@@ -8,6 +8,7 @@ import LiquidEther from "../utils/LiquidEther";
 import corporateImg from "../assets/album17.webp";
 import weddingImg from "../assets/album30.webp";
 import stageImg from "../assets/album1.webp";
+import { Helmet } from "react-helmet-async";
 
 const cards = [
   {
@@ -54,6 +55,22 @@ export default function EventCoverage() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Best Event Coverage Services in Delhi | Wedding, Corporate & Stage
+          Events
+        </title>
+
+        <meta
+          name="description"
+          content="Professional event coverage services in Delhi NCR for corporate events, weddings, conferences & stage productions. Multi-camera setup, drone shoots, photography & complete event execution."
+        />
+
+        <link
+          rel="canonical"
+          href="https://pixelmediaproduction.in/event-management"
+        />
+      </Helmet>
       <Navbar />
       <main className="relative min-h-screen text-white overflow-hidden">
         <div className="fixed inset-0 -z-10 pointer-events-none bg-black">

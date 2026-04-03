@@ -8,6 +8,7 @@ import LiquidEther from "../utils/LiquidEther";
 import brandingImg from "../assets/branding.jpg";
 import marketingImg from "../assets/digital-marketing.jpg";
 import postImg from "../assets/video-editing.jpg";
+import { Helmet } from "react-helmet-async";
 
 export default function CreativeServicesSplit() {
   const [active, setActive] = useState(null);
@@ -73,6 +74,22 @@ export default function CreativeServicesSplit() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Best Digital Marketing & Creative Agency in Delhi | Branding &
+          Post-Production
+        </title>
+
+        <meta
+          name="description"
+          content="Creative agency in Delhi NCR offering digital marketing, branding, video editing & post-production services. Social media, ads, motion graphics & cinematic content to grow your brand."
+        />
+
+        <link
+          rel="canonical"
+          href="https://pixelmediaproduction.in/digital-creative-services"
+        />
+      </Helmet>
       <Navbar />
 
       <main
@@ -114,7 +131,7 @@ export default function CreativeServicesSplit() {
               </p>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
-                Creative, Branding & Marketing
+                Creative, Branding & Digital Marketing Services in Delhi
                 <span className="block text-gray-300 font-normal">
                   cinematic strategies for ambitious brands.
                 </span>
